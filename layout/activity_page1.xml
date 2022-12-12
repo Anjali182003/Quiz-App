@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cbg"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="155dp"
+            android:layout_height="70dp"
+            android:background="#D34B0B67"
+            android:backgroundTint="#D34B0B67"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="C QUIZ"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.003" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="329dp"
+            android:layout_height="101dp"
+            android:background="#BEFFFFFF"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Who is the father of C language?"
+            android:textAlignment="center"
+            android:textColor="#D34B0B67"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv"
+            app:layout_constraintVertical_bias="0.031" />
+
+        <RadioGroup
+            android:id="@+id/rg1"
+            android:layout_width="300dp"
+            android:layout_height="195dp"
+            android:layout_margin="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            app:layout_constraintVertical_bias="0.02">
+
+            <RadioButton
+                android:id="@+id/r11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="Bjarne Stroustrup"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="James Gosling"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="Dennis Ritchie"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="Dr. e.f Codd"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="329dp"
+            android:layout_height="101dp"
+            android:layout_margin="30dp"
+            android:background="#BEFFFFFF"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="In which year, C language was developed?"
+            android:textAlignment="center"
+            android:textColor="#D34B0B67"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rg1"
+            app:layout_constraintVertical_bias="0" />
+
+
+        <RadioGroup
+            android:id="@+id/rg2"
+            android:layout_width="300dp"
+            android:layout_height="195dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:layout_constraintVertical_bias="0.032">
+
+            <RadioButton
+                android:id="@+id/r21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="1979"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="1972"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="1991"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="1995"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="329dp"
+            android:layout_height="101dp"
+            android:background="#BEFFFFFF"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Which of the following function is user defined?"
+            android:textAlignment="center"
+            android:textColor="#D34B0B67"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.195"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg2"
+            app:layout_constraintVertical_bias="0.045" />
+
+
+        <RadioGroup
+            android:id="@+id/rg3"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_margin="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/r31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="printf"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="scanf"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="main"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/r34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D34B0B67"
+                android:fontFamily="serif"
+                android:text="none"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/sub1"
+            android:layout_width="124dp"
+            android:layout_height="53dp"
+            android:layout_margin="50dp"
+            android:fontFamily="serif"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:backgroundTint="#D365118A"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg3"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <TextView
+            android:id="@+id/percent1"
+            android:layout_width="58dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="86dp"
+            android:layout_marginLeft="120dp"
+            android:fontFamily="serif"
+            android:background="#D34B0B67"
+            android:layout_margin="50dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/progressBar1"
+            app:layout_constraintEnd_toEndOf="@id/progressBar1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/progressBar1"
+            app:layout_constraintTop_toTopOf="@id/progressBar1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="176dp"
+            android:layout_height="175dp"
+            android:layout_margin="30dp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/custom_progress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.004"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/show1"
+            android:layout_width="244dp"
+            android:layout_height="79dp"
+            android:layout_margin="30dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.598"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressBar1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/finish1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="Finish"
+            android:textSize="16sp"
+            app:backgroundTint="#D365118A"
+            app:cornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/show1"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <TextView
+            android:id="@+id/te1"
+            android:layout_width="114dp"
+            android:layout_height="113dp"
+            android:gravity="center"
+            android:textSize="96sp"
+            app:layout_constraintBottom_toTopOf="@+id/show1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub1"
+            app:layout_constraintVertical_bias="0.516"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
